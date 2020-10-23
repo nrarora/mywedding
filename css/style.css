@@ -310,11 +310,20 @@ figure {
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
-
+@media screen and (max-width: 500px) {
+  .bg-image {
+    background-image: url(../images/IMG_20201019_201038-sm.jpg);
+  }
+}
+@media screen and (min-width: 501px) {
+  .bg-image {
+    background-image: url(../images/IMG_20201019_201038.jpg);
+  }
+}
 .fh5co-cover {
-  height: 900px;
+  height: 950px;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
   position: relative;
   width: 100%;
 }
@@ -861,7 +870,7 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 100px;
+  font-size: 90px;
   line-height: 1.5;
   font-family: "Sacramento", Arial, serif;
 }
@@ -869,14 +878,14 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -970,7 +979,13 @@ form label {
   position: relative;
   animation: pulse 1s ease infinite;
 }
-
+@media screen and (max-width: 500px) {
+  .simply-countdown > .simply-section {
+    /* The countdown */
+    width: 70px;
+    height: 70px;
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -989,6 +1004,11 @@ form label {
   height: 100px;
   width: 100px;
 }
+@media screen and (max-width: 500px) {
+  .simply-countdown > .simply-section > div {
+    height: 70px;
+  }
+}
 
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
@@ -1001,12 +1021,23 @@ form label {
   font-size: 30px;
   /* amounts */
 }
+@media screen and (max-width: 500px) {
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 20px;
+    /* amounts */
+  }
+}
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   font-size: 12px;
   /* words */
+}
+@media screen and (max-width: 500px) {
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 9px;
+  }
 }
 
 #fh5co-testimonial,
