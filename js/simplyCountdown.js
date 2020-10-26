@@ -138,7 +138,7 @@
           },
           plural: true,
           inline: false,
-          enableUtc: true,
+          enableUtc: false,
           onEnd: function () {
             return;
           },

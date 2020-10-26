@@ -1434,11 +1434,28 @@ form label {
   border: none !important;
   background: #f14e95;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
-  padding-left: 50px;
+  padding-left: 38px;
   padding-right: 50px;
+  margin-left: 310px;
+  padding-top: 14px;
+}
+@media screen and (max-width: 500px) {
+  #fh5co-started .btn {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #fh5co-started .btn {
+    margin-left: 250px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #fh5co-started .btn {
+    margin-left: 310px;
+  }
 }
 #fh5co-started .form-inline .form-group {
   width: 100% !important;
