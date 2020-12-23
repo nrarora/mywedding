@@ -207,23 +207,23 @@
           secondsLeft = (targetDate - now.getTime()) / 1000;
         }
 
-        if (secondsLeft > 0) {
-          days = parseInt(secondsLeft / 86400, 10);
-          secondsLeft = secondsLeft % 86400;
+        // if (secondsLeft > 0) {
+        days = Math.abs(parseInt(secondsLeft / 86400, 10));
+        secondsLeft = Math.abs(secondsLeft % 86400);
 
-          hours = parseInt(secondsLeft / 3600, 10);
-          secondsLeft = secondsLeft % 3600;
+        hours = Math.abs(parseInt(secondsLeft / 3600, 10));
+        secondsLeft = Math.abs(secondsLeft % 3600);
 
-          minutes = parseInt(secondsLeft / 60, 10);
-          seconds = parseInt(secondsLeft % 60, 10);
-        } else {
-          days = 0;
-          hours = 0;
-          minutes = 0;
-          seconds = 0;
-          window.clearInterval(interval);
-          parameters.onEnd();
-        }
+        minutes = Math.abs(parseInt(secondsLeft / 60, 10));
+        seconds = Math.abs(parseInt(secondsLeft % 60, 10));
+        // } else {
+        //   days = 0;
+        //   hours = 0;
+        //   minutes = 0;
+        //   seconds = 0;
+        //   window.clearInterval(interval);
+        //   parameters.onEnd();
+        // }
 
         if (parameters.plural) {
           dayWord =
